@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo GraphQL</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; }
+        form { display: flex; gap: 8px; }
+        input { flex: 1; padding: 10px; }
+        button { padding: 10px 12px; cursor: pointer; }
+        ul { padding: 0; list-style: none; }
+        li { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #ddd; }
+        .title.done { text-decoration: line-through; opacity: 0.6; }
+        .muted { opacity: 0.7; font-size: 12px; }
+    </style>
+</head>
+<body>
+<h1>Todo (GraphQL)</h1>
+
+<form id="create-form">
+    <input id="title" placeholder="할 일 입력" autocomplete="off" />
+    <button type="submit">추가</button>
+</form>
+
+<p id="status" class="muted"></p>
+
+<ul id="list"></ul>
+
+<script src="/app.js"></script>
+</body>
+</html>
